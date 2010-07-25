@@ -54,7 +54,7 @@
           </descriptors>
           <archive>
             <manifest>
-              <mainClass>de.mafr.hadoop.WordCount</mainClass>
+              <mainClass>${package}.WordCount</mainClass>
             </manifest>
           </archive>
         </configuration>
