@@ -16,6 +16,7 @@
   </description>
 
   <scm>
+    <connection>scm:hg:http://dev.mafr.de/repos/hg/hadoop-job-basic</connection>
     <url>http://dev.mafr.de/repos/hg/</url>
   </scm>
 
