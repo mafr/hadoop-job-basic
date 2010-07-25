@@ -27,6 +27,21 @@
     </license>
   </licenses>
 
+  <distributionManagement>
+    <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>mafr-releases</id>
+      <name>Release repository on dev.mafr.de</name>
+      <url>scpexe://vps/home/repos/maven2/releases</url>
+    </repository>
+    <snapshotRepository>
+      <uniqueVersion>true</uniqueVersion>
+      <id>mafr-snapshots</id>
+      <name>Snapshot repository on dev.mafr.de</name>
+      <url>scpexe://vps/home/repos/maven2/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+
   <build>
     <extensions>
       <extension>
