@@ -15,6 +15,10 @@
     An archetype for creating a basic, self-contained Hadoop job.
   </description>
 
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
   <scm>
     <connection>scm:hg:http://dev.mafr.de/repos/hg/hadoop-job-basic</connection>
     <url>http://dev.mafr.de/repos/hg/</url>
@@ -48,14 +52,14 @@
       <extension>
         <groupId>org.apache.maven.archetype</groupId>
         <artifactId>archetype-packaging</artifactId>
-        <version>2.0-alpha-5</version>
+        <version>2.0</version>
       </extension>
     </extensions>
     <pluginManagement>
       <plugins>
         <plugin>
           <artifactId>maven-archetype-plugin</artifactId>
-          <version>2.0-alpha-5</version>
+          <version>2.0</version>
           <extensions>true</extensions>
         </plugin>
       </plugins>
