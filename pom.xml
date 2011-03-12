@@ -32,6 +32,14 @@
     </license>
   </licenses>
 
+  <developers>
+    <developer>
+      <id>mafr</id>
+      <name>Matthias Friedrich</name>
+      <email>matt@mafr.de</email>
+    </developer>
+  </developers>
+
   <distributionManagement>
     <repository>
       <uniqueVersion>false</uniqueVersion>
