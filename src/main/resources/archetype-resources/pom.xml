@@ -83,4 +83,8 @@
     </plugins>
   </build>
 
+  <prerequisites>
+    <maven>2.2.1</maven>
+  </prerequisites>
+
 </project>

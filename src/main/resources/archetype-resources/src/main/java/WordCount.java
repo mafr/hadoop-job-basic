@@ -32,7 +32,7 @@ public class WordCount extends Configured implements Tool {
         String[] remainingArgs = new GenericOptionsParser(getConf(), args).getRemainingArgs();
         
         if (remainingArgs.length < 2) {
-            System.err.println("Usage: WorldCount <in> <out>");
+            System.err.println("Usage: WordCount <in> <out>");
             ToolRunner.printGenericCommandUsage(System.err);
             return 1;
         }
