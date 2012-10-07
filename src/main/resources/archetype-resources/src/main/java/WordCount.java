@@ -12,7 +12,6 @@ import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.reduce.IntSumReducer;
-import org.apache.hadoop.util.GenericOptionsParser;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 
@@ -29,9 +28,7 @@ public class WordCount extends Configured implements Tool {
 
     @Override
     public int run(String[] args) throws Exception {
-        String[] remainingArgs = new GenericOptionsParser(getConf(), args).getRemainingArgs();
-        
-        if (remainingArgs.length < 2) {
+        if (args.length < 2) {
             System.err.println("Usage: WordCount <in> <out>");
             ToolRunner.printGenericCommandUsage(System.err);
             return 1;
@@ -47,8 +44,8 @@ public class WordCount extends Configured implements Tool {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
         
-        FileInputFormat.addInputPath(job, new Path(remainingArgs[0]));
-        FileOutputFormat.setOutputPath(job, new Path(remainingArgs[1]));
+        FileInputFormat.addInputPath(job, new Path(args[0]));
+        FileOutputFormat.setOutputPath(job, new Path(args[1]));
         
         boolean success = job.waitForCompletion(true);
         
