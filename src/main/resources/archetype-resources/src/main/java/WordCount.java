@@ -28,8 +28,11 @@ public class WordCount extends Configured implements Tool {
 
     @Override
     public int run(String[] args) throws Exception {
-        if (args.length < 2) {
-            System.err.println("Usage: WordCount <in> <out>");
+        
+        if (args.length != 2) {
+            System.err.println("Usage: hadoop jar ${artifactId}-${version}-job.jar"
+                                       + " [generic options] <in> <out>");
+            System.out.println();
             ToolRunner.printGenericCommandUsage(System.err);
             return 1;
         }
