@@ -6,7 +6,7 @@
 
   <groupId>de.mafr.maven.archetypes</groupId>
   <artifactId>hadoop-job-basic</artifactId>
-  <version>1.4</version>
+  <version>1.5-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
 
   <name>Basic Hadoop Job Archetype</name>
@@ -23,7 +23,7 @@
     <connection>scm:git:https://github.com/mafr/hadoop-job-basic.git</connection>
     <developerConnection>scm:git:git@github.com:mafr/hadoop-job-basic.git</developerConnection>
     <url>https://github.com/mafr/hadoop-job-basic</url>
-    <tag>hadoop-job-basic-1.4</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <licenses>
