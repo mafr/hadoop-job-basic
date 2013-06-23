@@ -10,7 +10,7 @@
   <packaging>maven-archetype</packaging>
 
   <name>Basic Hadoop Job Archetype</name>
-  <url>http://mafr.de</url>
+  <url>https://github.com/mafr/hadoop-job-basic</url>
   <description>
     An archetype for creating a basic, self-contained Hadoop job.
   </description>
@@ -20,9 +20,9 @@
   </properties>
 
   <scm>
-    <connection>scm:hg:http://dev.mafr.de/repos/hg/hadoop-job-basic</connection>
-    <url>http://dev.mafr.de/repos/hg/</url>
-    <tag>HEAD</tag>
+    <connection>scm:git:https://github.com/mafr/hadoop-job-basic.git</connection>
+    <developerConnection>scm:git:git@github.com:mafr/hadoop-job-basic.git</developerConnection>
+    <url>https://github.com/mafr/hadoop-job-basic</url>
   </scm>
 
   <licenses>
